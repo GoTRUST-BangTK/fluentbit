@@ -1,0 +1,156 @@
+Fluent Bit v3.2.3
+* Copyright (C) 2015-2024 The Fluent Bit Authors
+* Fluent Bit is a CNCF sub-project under the umbrella of Fluentd
+* https://fluentbit.io
+
+______ _                  _    ______ _ _           _____  _____ 
+|  ___| |                | |   | ___ (_) |         |____ |/ __  \
+| |_  | |_   _  ___ _ __ | |_  | |_/ /_| |_  __   __   / /`' / /'
+|  _| | | | | |/ _ \ '_ \| __| | ___ \ | __| \ \ / /   \ \  / /  
+| |   | | |_| |  __/ | | | |_  | |_/ / | |_   \ V /.___/ /./ /___
+\_|   |_|\__,_|\___|_| |_|\__| \____/|_|\__|   \_/ \____(_)_____/
+
+
+[2024/12/29 23:54:41] [ info] Configuration:
+[2024/12/29 23:54:41] [ info]  flush time     | 1.000000 seconds
+[2024/12/29 23:54:41] [ info]  grace          | 5 seconds
+[2024/12/29 23:54:41] [ info]  daemon         | 0
+[2024/12/29 23:54:41] [ info] ___________
+[2024/12/29 23:54:41] [ info]  inputs:
+[2024/12/29 23:54:41] [ info]      tail
+[2024/12/29 23:54:41] [ info] ___________
+[2024/12/29 23:54:41] [ info]  filters:
+[2024/12/29 23:54:41] [ info]      lua.0
+[2024/12/29 23:54:41] [ info] ___________
+[2024/12/29 23:54:41] [ info]  outputs:
+[2024/12/29 23:54:41] [ info]      forward.0
+[2024/12/29 23:54:41] [ info] ___________
+[2024/12/29 23:54:41] [ info]  collectors:
+[2024/12/29 23:54:41] [ info] [fluent bit] version=3.2.3, commit=44a2d0d43f, pid=22632
+[2024/12/29 23:54:41] [debug] [engine] coroutine stack size: 98302 bytes (96.0K)
+[2024/12/29 23:54:41] [ info] [storage] ver=1.5.2, type=memory, sync=full, checksum=off, max_chunks_up=128
+[2024/12/29 23:54:41] [ info] [simd    ] disabled
+[2024/12/29 23:54:41] [ info] [cmetrics] version=0.9.9
+[2024/12/29 23:54:41] [ info] [ctraces ] version=0.5.7
+[2024/12/29 23:54:41] [ info] [input:tail:tail.0] initializing
+[2024/12/29 23:54:41] [ info] [input:tail:tail.0] storage_strategy='memory' (memory only)
+[2024/12/29 23:54:41] [debug] [tail:tail.0] created event channels: read=824 write=828
+[2024/12/29 23:54:41] [debug] [input:tail:tail.0] flb_tail_fs_stat_init() initializing stat tail input
+[2024/12/29 23:54:41] [debug] [input:tail:tail.0] inode=8444249301383080 with offset=64752 appended as C:\KioskService\API\Logs\app-log-demo.txt
+[2024/12/29 23:54:41] [debug] [input:tail:tail.0] 1 new files found on path 'C:\KioskService\API\Logs\app-log*'
+[2024/12/29 23:54:41] [debug] [forward:forward.0] created event channels: read=856 write=860
+[2024/12/29 23:54:41] [ info] [sp] stream processor started
+[2024/12/29 23:54:41] [ info] [output:forward:forward.0] worker #0 started
+[2024/12/29 23:54:41] [ info] [output:forward:forward.0] worker #1 started
+[2024/12/29 23:54:41] [debug] [input:tail:tail.0] inode=8444249301383080 file=C:\KioskService\API\Logs\app-log-demo.txt promote to TAIL_EVENT
+[2024/12/29 23:54:41] [debug] [input:tail:tail.0] [static files] processed 0b, done
+[2024/12/29 23:54:42] [debug] [task] created task=0000020C0E54BF90 id=0 OK
+[2024/12/29 23:54:42] [debug] [output:forward:forward.0] task_id=0 assigned to thread #0
+[2024/12/29 23:54:42] [debug] [output:forward:forward.0] request 148 bytes to flush
+[2024/12/29 23:54:42] [debug] [input:tail:tail.0] 0 new files found on path 'C:\KioskService\API\Logs\app-log*'
+[2024/12/29 23:54:42] [debug] [upstream] KA connection #1180 to 172.22.163.223:24224 is connected
+[2024/12/29 23:54:42] [debug] [output:forward:forward.0] protocol: received HELO
+[2024/12/29 23:54:42] [debug] [output:forward:forward.0] PING sent: ret=294 bytes sent=294
+[2024/12/29 23:54:42] [debug] [output:forward:forward.0] handshake status = 0
+[2024/12/29 23:54:42] [debug] [upstream] KA connection #1180 to 172.22.163.223:24224 is now available
+[2024/12/29 23:54:42] [debug] [out flush] cb_destroy coro_id=0
+[2024/12/29 23:54:42] [debug] [task] destroy task=0000020C0E54BF90 (task_id=0)
+[2024/12/29 23:54:43] [debug] [task] created task=0000020C0E54B770 id=0 OK
+[2024/12/29 23:54:43] [debug] [output:forward:forward.0] task_id=0 assigned to thread #1
+[2024/12/29 23:54:43] [debug] [output:forward:forward.0] request 189 bytes to flush
+[2024/12/29 23:54:43] [debug] [input:tail:tail.0] 0 new files found on path 'C:\KioskService\API\Logs\app-log*'
+[2024/12/29 23:54:43] [debug] [upstream] KA connection #1192 to 172.22.163.223:24224 is connected
+[2024/12/29 23:54:43] [debug] [output:forward:forward.0] protocol: received HELO
+[2024/12/29 23:54:43] [debug] [output:forward:forward.0] PING sent: ret=294 bytes sent=294
+[2024/12/29 23:54:43] [debug] [output:forward:forward.0] handshake status = 0
+[2024/12/29 23:54:43] [debug] [upstream] KA connection #1192 to 172.22.163.223:24224 is now available
+[2024/12/29 23:54:43] [debug] [out flush] cb_destroy coro_id=0
+[2024/12/29 23:54:43] [debug] [task] destroy task=0000020C0E54B770 (task_id=0)
+[2024/12/29 23:54:44] [debug] [task] created task=0000020C0E54C490 id=0 OK
+[2024/12/29 23:54:44] [debug] [output:forward:forward.0] task_id=0 assigned to thread #0
+[2024/12/29 23:54:44] [debug] [output:forward:forward.0] request 160 bytes to flush
+[2024/12/29 23:54:44] [debug] [upstream] KA connection #1180 to 172.22.163.223:24224 has been assigned (recycled)
+[2024/12/29 23:54:44] [debug] [input:tail:tail.0] 0 new files found on path 'C:\KioskService\API\Logs\app-log*'
+[2024/12/29 23:54:44] [debug] [upstream] KA connection #1180 to 172.22.163.223:24224 is now available
+[2024/12/29 23:54:44] [debug] [out flush] cb_destroy coro_id=1
+[2024/12/29 23:54:44] [debug] [task] destroy task=0000020C0E54C490 (task_id=0)
+[2024/12/29 23:54:45] [debug] [task] created task=0000020C0E54B770 id=0 OK
+[2024/12/29 23:54:45] [debug] [output:forward:forward.0] task_id=0 assigned to thread #1
+[2024/12/29 23:54:45] [debug] [output:forward:forward.0] request 220 bytes to flush
+[2024/12/29 23:54:45] [debug] [upstream] KA connection #1192 to 172.22.163.223:24224 has been assigned (recycled)
+[2024/12/29 23:54:45] [debug] [upstream] KA connection #1192 to 172.22.163.223:24224 is now available
+[2024/12/29 23:54:45] [debug] [out flush] cb_destroy coro_id=1
+[2024/12/29 23:54:45] [debug] [input:tail:tail.0] 0 new files found on path 'C:\KioskService\API\Logs\app-log*'
+[2024/12/29 23:54:45] [debug] [task] destroy task=0000020C0E54B770 (task_id=0)
+[2024/12/29 23:54:46] [debug] [task] created task=0000020C0E54BB30 id=0 OK
+[2024/12/29 23:54:46] [debug] [output:forward:forward.0] task_id=0 assigned to thread #0
+[2024/12/29 23:54:46] [debug] [output:forward:forward.0] request 193 bytes to flush
+[2024/12/29 23:54:46] [debug] [upstream] KA connection #1180 to 172.22.163.223:24224 has been assigned (recycled)
+[2024/12/29 23:54:46] [debug] [upstream] KA connection #1180 to 172.22.163.223:24224 is now available
+[2024/12/29 23:54:46] [debug] [out flush] cb_destroy coro_id=2
+[2024/12/29 23:54:46] [debug] [input:tail:tail.0] 0 new files found on path 'C:\KioskService\API\Logs\app-log*'
+[2024/12/29 23:54:46] [debug] [task] destroy task=0000020C0E54BB30 (task_id=0)
+[2024/12/29 23:54:47] [debug] [task] created task=0000020C0E54BE50 id=0 OK
+[2024/12/29 23:54:47] [debug] [output:forward:forward.0] task_id=0 assigned to thread #1
+[2024/12/29 23:54:47] [debug] [output:forward:forward.0] request 218 bytes to flush
+[2024/12/29 23:54:47] [debug] [upstream] KA connection #1192 to 172.22.163.223:24224 has been assigned (recycled)
+[2024/12/29 23:54:47] [debug] [upstream] KA connection #1192 to 172.22.163.223:24224 is now available
+[2024/12/29 23:54:47] [debug] [out flush] cb_destroy coro_id=2
+[2024/12/29 23:54:47] [debug] [input:tail:tail.0] 0 new files found on path 'C:\KioskService\API\Logs\app-log*'
+[2024/12/29 23:54:47] [debug] [task] destroy task=0000020C0E54BE50 (task_id=0)
+[2024/12/29 23:54:48] [debug] [task] created task=0000020C0E54C490 id=0 OK
+[2024/12/29 23:54:48] [debug] [output:forward:forward.0] task_id=0 assigned to thread #0
+[2024/12/29 23:54:48] [debug] [output:forward:forward.0] request 180 bytes to flush
+[2024/12/29 23:54:48] [debug] [upstream] KA connection #1180 to 172.22.163.223:24224 has been assigned (recycled)
+[2024/12/29 23:54:48] [debug] [upstream] KA connection #1180 to 172.22.163.223:24224 is now available
+[2024/12/29 23:54:48] [debug] [out flush] cb_destroy coro_id=3
+[2024/12/29 23:54:48] [debug] [input:tail:tail.0] 0 new files found on path 'C:\KioskService\API\Logs\app-log*'
+[2024/12/29 23:54:48] [debug] [task] destroy task=0000020C0E54C490 (task_id=0)
+[2024/12/29 23:54:49] [debug] [task] created task=0000020C0E54B770 id=0 OK
+[2024/12/29 23:54:49] [debug] [output:forward:forward.0] task_id=0 assigned to thread #1
+[2024/12/29 23:54:49] [debug] [output:forward:forward.0] request 212 bytes to flush
+[2024/12/29 23:54:49] [debug] [upstream] KA connection #1192 to 172.22.163.223:24224 has been assigned (recycled)
+[2024/12/29 23:54:49] [debug] [upstream] KA connection #1192 to 172.22.163.223:24224 is now available
+[2024/12/29 23:54:49] [debug] [out flush] cb_destroy coro_id=3
+[2024/12/29 23:54:49] [debug] [input:tail:tail.0] 0 new files found on path 'C:\KioskService\API\Logs\app-log*'
+[2024/12/29 23:54:49] [debug] [task] destroy task=0000020C0E54B770 (task_id=0)
+[2024/12/29 23:54:50] [debug] [task] created task=0000020C0E54C490 id=0 OK
+[2024/12/29 23:54:50] [debug] [output:forward:forward.0] task_id=0 assigned to thread #0
+[2024/12/29 23:54:50] [debug] [output:forward:forward.0] request 188 bytes to flush
+[2024/12/29 23:54:50] [debug] [upstream] KA connection #1180 to 172.22.163.223:24224 has been assigned (recycled)
+[2024/12/29 23:54:50] [debug] [upstream] KA connection #1180 to 172.22.163.223:24224 is now available
+[2024/12/29 23:54:50] [debug] [out flush] cb_destroy coro_id=4
+[2024/12/29 23:54:50] [debug] [input:tail:tail.0] 0 new files found on path 'C:\KioskService\API\Logs\app-log*'
+[2024/12/29 23:54:50] [debug] [task] destroy task=0000020C0E54C490 (task_id=0)
+[2024/12/29 23:54:51] [debug] [task] created task=0000020C0E54C490 id=0 OK
+[2024/12/29 23:54:51] [debug] [output:forward:forward.0] task_id=0 assigned to thread #1
+[2024/12/29 23:54:51] [debug] [output:forward:forward.0] request 220 bytes to flush
+[2024/12/29 23:54:51] [debug] [upstream] KA connection #1192 to 172.22.163.223:24224 has been assigned (recycled)
+[2024/12/29 23:54:51] [debug] [upstream] KA connection #1192 to 172.22.163.223:24224 is now available
+[2024/12/29 23:54:51] [debug] [input:tail:tail.0] 0 new files found on path 'C:\KioskService\API\Logs\app-log*'
+[2024/12/29 23:54:51] [debug] [out flush] cb_destroy coro_id=4
+[2024/12/29 23:54:51] [debug] [task] destroy task=0000020C0E54C490 (task_id=0)
+[2024/12/29 23:54:52] [debug] [task] created task=0000020C0E54C490 id=0 OK
+[2024/12/29 23:54:52] [debug] [output:forward:forward.0] task_id=0 assigned to thread #0
+[2024/12/29 23:54:52] [debug] [output:forward:forward.0] request 192 bytes to flush
+[2024/12/29 23:54:52] [debug] [upstream] KA connection #1180 to 172.22.163.223:24224 has been assigned (recycled)
+[2024/12/29 23:54:52] [debug] [upstream] KA connection #1180 to 172.22.163.223:24224 is now available
+[2024/12/29 23:54:52] [debug] [input:tail:tail.0] 0 new files found on path 'C:\KioskService\API\Logs\app-log*'
+[2024/12/29 23:54:52] [debug] [out flush] cb_destroy coro_id=5
+[2024/12/29 23:54:52] [debug] [task] destroy task=0000020C0E54C490 (task_id=0)
+[2024/12/29 23:54:53] [debug] [task] created task=0000020C0E54B8B0 id=0 OK
+[2024/12/29 23:54:53] [debug] [output:forward:forward.0] task_id=0 assigned to thread #1
+[2024/12/29 23:54:53] [debug] [output:forward:forward.0] request 224 bytes to flush
+[2024/12/29 23:54:53] [debug] [upstream] KA connection #1192 to 172.22.163.223:24224 has been assigned (recycled)
+[2024/12/29 23:54:53] [debug] [upstream] KA connection #1192 to 172.22.163.223:24224 is now available
+[2024/12/29 23:54:53] [debug] [out flush] cb_destroy coro_id=5
+[2024/12/29 23:54:53] [debug] [input:tail:tail.0] 0 new files found on path 'C:\KioskService\API\Logs\app-log*'
+[2024/12/29 23:54:53] [debug] [task] destroy task=0000020C0E54B8B0 (task_id=0)
+[2024/12/29 23:54:54] [debug] [task] created task=0000020C0E54B770 id=0 OK
+[2024/12/29 23:54:54] [debug] [output:forward:forward.0] task_id=0 assigned to thread #0
+[2024/12/29 23:54:54] [debug] [output:forward:forward.0] request 187 bytes to flush
+[2024/12/29 23:54:54] [debug] [upstream] KA connection #1180 to 172.22.163.223:24224 has been assigned (recycled)
+[2024/12/29 23:54:54] [debug] [upstream] KA connection #1180 to 172.22.163.223:24224 is now available
+[2024/12/29 23:54:54] [debug] [out flush] cb_destroy coro_id=6
+[2024/12/29 23:54:54] [debug] [input:tail:tail.0] 0 new files found on path 'C:\KioskService\API\Logs\app-log*'
+[2024/12/29 23:54:54] [debug] [task] destroy task=0000020C0E54B770 (task_id=0)
