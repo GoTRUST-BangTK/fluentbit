@@ -8,7 +8,9 @@ Remove-Item -Path "C:\fluentbit" -Recurse -Force -ErrorAction SilentlyContinue
 $ProgressPreference = 'SilentlyContinue'
 Invoke-WebRequest -Uri $fluentbit_uri -OutFile "C:\fluentbit.zip"
 Expand-Archive -Path "C:\fluentbit.zip" -DestinationPath "C:\fluentbit" -Force
-Get-ChildItem -Path "C:\fluentbit" -Recurse | Move-Item -Destination "C:\fluentbit" -Force
+Get-ChildItem -Path "C:\fluentbit\fluentbit" -Recurse | Move-Item -Destination "C:\fluentbit" -Force
+Remove-Item -Path "C:\fluentbit\fluentbit" -Recurse -Force
+
 
 sc stop $fluentbit_service
 sc delete $fluentbit_service
