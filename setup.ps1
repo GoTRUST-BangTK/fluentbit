@@ -12,11 +12,11 @@ Get-ChildItem -Path "C:\fluentbit\fluentbit" -Recurse | Move-Item -Destination "
 Remove-Item -Path "C:\fluentbit\fluentbit" -Recurse -Force
 
 
-sc stop $fluentbit_service
-sc delete $fluentbit_service
-sc create $fluentbit_service binPath= "C:\fluentbit\bin\fluent-bit.exe -c C:\fluentbit\conf\fluent-bit.conf" start= auto
-sc query $fluentbit_service
-sc start $fluentbit_service
+sc.exe stop $fluentbit_service
+sc.exe delete $fluentbit_service
+sc.exe create $fluentbit_service binPath= "C:\fluentbit\bin\fluent-bit.exe -c C:\fluentbit\conf\fluent-bit.conf" start= auto
+sc.exe query $fluentbit_service
+sc.exe start $fluentbit_service
 
 Remove-Item -Path "C:\fluentbit.zip" -Recurse -Force -ErrorAction SilentlyContinue
 # Remove-Item -Path "C:\fluentbit" -Recurse -Force -ErrorAction SilentlyContinue
