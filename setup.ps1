@@ -1,4 +1,4 @@
-$fluentbit_uri = "https://drive.usercontent.google.com/download?id=1BsOgJpUxsj9NGFtlCJ_l2bA8o_R8_wUP`&export=download`&authuser=0`&confirm=t`&uuid=4bd172b6-414a-43dd-93ea-346a3975519c`&at=APvzH3r7dH_ff-dnwkI4J4GLYtco:1735531420480"
+$fluentbit_uri = "https://drive.usercontent.google.com/download?id=1blK-swTWSMV-gBtUyZLc4kH3pVes8unU`&export=download`&authuser=0`&confirm=t`&uuid=3fb2c611-4787-4b5d-8fb3-e376f76b4386`&at=AIrpjvO2RuXGfEML8JPEY40wVNdq:1736395742906"
 $fluentbit_service = "fluentbit"
 #  Get-ChildItem -Path "$API_FOLDER_PATH\API_HN212" -Recurse -Force |
 
