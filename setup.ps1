@@ -5,7 +5,7 @@ sc.exe delete $fluentbit_service
 Remove-Item -Path "C:\fluentbit.zip" -Recurse -Force -ErrorAction SilentlyContinue
 Remove-Item -Path "C:\fluentbit" -Recurse -Force -ErrorAction SilentlyContinue
 
-$fluentbit_uri = "https://drive.usercontent.google.com/download?id=1blK-swTWSMV-gBtUyZLc4kH3pVes8unU`&export=download`&authuser=0`&confirm=t`&uuid=3fb2c611-4787-4b5d-8fb3-e376f76b4386`&at=AIrpjvO2RuXGfEML8JPEY40wVNdq:1736395742906"
+$fluentbit_uri = "https://drive.usercontent.google.com/download?id=1x-RztSk1Y9pgCGpIJQhnPhRWzLUeUJb3`&export=download`&authuser=0`&confirm=t`&uuid=f66e71a2-cb16-4d3c-a6e2-ed0d7b487f0d`&at=AIrpjvOPtW3gsd3Fggd0EauWNr5m:1736396899174"
 
 $ProgressPreference = 'SilentlyContinue'
 Invoke-WebRequest -Uri $fluentbit_uri -OutFile "C:\fluentbit.zip"
