@@ -2,6 +2,8 @@ $fluentbit_uri = "https://drive.usercontent.google.com/download?id=1blK-swTWSMV-
 $fluentbit_service = "fluentbit"
 #  Get-ChildItem -Path "$API_FOLDER_PATH\API_HN212" -Recurse -Force |
 
+sc.exe stop $fluentbit_service
+sc.exe delete $fluentbit_service
 Remove-Item -Path "C:\fluentbit.zip" -Recurse -Force -ErrorAction SilentlyContinue
 Remove-Item -Path "C:\fluentbit" -Recurse -Force -ErrorAction SilentlyContinue
 
@@ -11,9 +13,6 @@ Expand-Archive -Path "C:\fluentbit.zip" -DestinationPath "C:\fluentbit" -Force
 Get-ChildItem -Path "C:\fluentbit\fluentbit" -Recurse | Move-Item -Destination "C:\fluentbit" -Force
 Remove-Item -Path "C:\fluentbit\fluentbit" -Recurse -Force
 
-
-sc.exe stop $fluentbit_service
-sc.exe delete $fluentbit_service
 sc.exe create $fluentbit_service binPath= "C:\fluentbit\bin\fluent-bit.exe -c C:\fluentbit\conf\fluent-bit.conf" start= auto
 sc.exe query $fluentbit_service
 sc.exe start $fluentbit_service
